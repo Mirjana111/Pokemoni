@@ -1,13 +1,120 @@
 body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f9f7f3;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+header {
+  flex-direction: block;
+  align-content: center;
+  align-items: center;
+  margin:30px auto;
+  width: 100%;
+  max-width: 500px;
+  background-color: #d7fdc0;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  color: #421820;
+  margin: 0;
+  font-weight: bolder;
+  
+}
+
+#searchInput {
+  margin-top: 10px;
+  padding: 8px;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+  border: none;
+}
+
+#pokemonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  background-color: #d1f7bb;
+  border-radius: 10px;
+  margin: 25px;
+  padding: 25px;
+  width: 100%;
+  max-width: 180px;
+  height: 240px;
+  box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* .card:hover {
+
+
+  margin-top: -3px;
+  transition-timing-function: ease;
+} */
+
+.card h2 {
+  font-size: 26px;
+  margin-top: 0;
+  text-align: center;
+  font-weight: bolder;
+  color: #421820;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  max-height: 300px;
+  opacity: 0.6;
+}
+.card img:hover{
+  opacity: 1;
+}
+.card p {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.highlight {
+  border: 18px solid #fcd9d9;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  #searchInput {
+    width: 90%;
+  }
+
+  header {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .card {
+    margin: 10px;
+    padding: 10px;
+  }
 }
